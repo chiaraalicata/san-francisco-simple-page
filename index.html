@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover San Francisco</title>
+    <style>
+      body {
+         background: linear-gradient(109.6deg, rgb(204, 228, 247) 11.2%, rgb(237, 246, 250) 100.2%);
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        )
+      }
+      h1 {
+        color: rgb(173, 17, 17);
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid rgb(173, 17, 17);
+        border-radius: 20px;
+        line-height: 2.5;
+        font-size: 20px;
+        color:rgb(10, 51, 187);
+      }
+
+      img {
+        display: block;
+        margin: 30px auto;
+        max-width: 90%;
+        border-radius: 15px;
+
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 0 10px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: rgb(245, 80, 80);
+        color: rgb(250, 215, 164);
+        font-size: 20px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      .discover-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: rgb(10, 51, 187);
+        font-size: 14px;
+      }
+      .discover-more:hover {
+        text-decoration: underline;
+      }
+      .san-francisco {
+          font-weight: bold;
+          font-style: italic;
+          color:rgb(173, 17, 17);
+      }
+      .list {
+          line-height: 1.5;
+          font-size: 15px;
+          margin: 20px 0 10px;
+      }
+      .footer {
+        text-align: center;
+        font-size: 14px;
+      }
+      .creator{
+          text-decoration: none;
+          color:rgb(10, 51, 187);
+      }
+      .creator:hover{
+          text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>San Francisco 🇺🇸</h1>
+      <h2>Discover the most beautiful city of California! 🌈</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/852/original/california-san-francisco-golden-gate-bridge.jpg?1643397935"
+        alt="golden gate bridge"
+      />
+      <hr />
+      <p>
+        It may measure less than 50 square miles and have a population that
+        doesn’t even surpass a million, but
+        <span class="san-francisco">San Francisco</span> justly ranks as one of
+        the greatest cities in the world. Famous for grand-dame Victorian
+        buildings, cable cars, dynamic diversity, a beautiful waterfront and a
+        soaring crimson bridge, the '<em>City by the Bay</em>' truly has it all.
+        Trend-defining cuisine ranging from Michelin-starred dining aplenty to
+        outrageous food vans; world-renowned symphony, ballet, theatre and
+        opera; plus almost boundless outdoor adventures,
+        <span class="san-francisco">San Francisco</span> justifiably stands out
+        as one of the ultimate must-visit cities on any traveller’s wish list.
+        <br/>
+        <div class="list">
+            Things that you Cannot Miss in San Francisco:
+         <ol>
+             <li>
+               Crossing the Golden Gate Bridge 🌁
+             </li>
+             <li>
+               Taking the Cable Car 🚋
+             </li>
+             <li>
+               Relaxing at the Golden Gate Park 🌳
+             </li>
+             <li>
+               Eating burritos in the Mission District 🌯
+             </li>
+             <li>
+               Visiting Fisherman's Wharf 🦀
+             </li>
+         </ol>
+        </div>
+        <br />
+        <a
+          href="https://www.visitcalifornia.com/ca/destination/spotlight-san-francisco"
+          target="_blank"
+          class="discover-more"
+          >Discover more on Visit California.</a
+        >
+      </p>
+      <hr />
+      <button>Book your flight ✈️</button>
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/chiara-alicata-9b0529177/"
+          target="_blank" class="creator"
+          >Chiara Alicata.</a
+        >
+      </p>
+    </div>
+    <script>
+      function bookFlight() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        if (age >= 18) {
+          alert(`Great ${name}!🎊 Pack your clothes and get ready! 🌉`);
+        } else {
+          alert(`😢 Sorry ${name}, you are still too young to go!`);
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", bookFlight);
+    </script>
+  </body>
+</html>
